@@ -28,12 +28,7 @@ class Server {
         this.app.use(express.static(path.resolve(__dirname, '../', 'public')));
 
         //CORS
-        this.app.use(cors(
-            {
-                origin: process.env.ORIGIN + ':' + process.env.PORT,
-                credentials: true
-            }
-        ));
+        this.app.use(cors());
 
     }
 
