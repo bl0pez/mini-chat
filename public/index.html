@@ -37,7 +37,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-        const socket = io('http://localhost:8080');
+        const socket = io(process.env.SOCKET_SERVER_URL);
 
         //Referencias elementos del Dom
         const form = document.querySelector('#form');
